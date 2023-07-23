@@ -14,7 +14,6 @@ int _printf(const char *format, ...);
 int print_char(va_list a);
 int print_percent(__attribute__((unused))va_list args);
 int print_string(va_list s);
-int print_int(va_list i);
 int print_dec(va_list d);
 int print_bin(va_list b);
 int print_unsign(va_list u);

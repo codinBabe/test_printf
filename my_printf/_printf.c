@@ -11,7 +11,7 @@ int (*check_function(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
-		{"i", print_int},
+		{"i", print_dec},
 		{"d", print_dec},
 		{"b", print_bin},
 		{"u", print_unsign},
