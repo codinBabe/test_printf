@@ -2,7 +2,7 @@
 /**
  * print_char - a function that print character
  * @c: character to print
- * Return: zero on success
+ * Return: Always success
  */
 int print_char(va_list c)
 {
@@ -11,14 +11,15 @@ int print_char(va_list c)
 	a = va_arg(c, int);
 	_putchar(a);
 
-	return (0);
+	return (1);
 }
 /**
  * print_percent - function that print percentage
- * Return: zero on success
+ * @args:unused attribute
+ * Return: Always success
  */
-int print_percent(void)
+int print_percent(__attribute__((unused))va_list args)
 {
 	_putchar('%');
-	return (0);
+	return (1);
 }

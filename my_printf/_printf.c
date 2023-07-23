@@ -10,6 +10,7 @@ int (*check_function(const char *format))(va_list)
 	print_f check_f[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"%", print_percent},
 		{"i", print_int},
 		{"d", print_dec},
 		{"b", print_bin},

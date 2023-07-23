@@ -7,7 +7,7 @@
 int print_string(va_list s)
 {
 	char *str;
-	int i;
+	int i, count = 0;
 
 	str = va_arg(s, char *);
 
@@ -15,7 +15,10 @@ int print_string(va_list s)
 		str = "(nil)";
 
 	for (i = 0; str[i] != '\0'; i++)
+	{
 		_putchar(str[i]);
+		count++;
+	}
 
-	return (i);
+	return (count);
 }
