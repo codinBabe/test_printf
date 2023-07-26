@@ -13,6 +13,8 @@ int (*check_function(const char *format))(va_list)
 		{"%", print_percent},
 		{"i", print_dec},
 		{"d", print_dec},
+		{"i", print_zero_dec},
+		{"d", print_zero_dec},
 		{"b", print_bin},
 		{"u", print_unsign},
 		{"o", print_octal},
@@ -22,6 +24,8 @@ int (*check_function(const char *format))(va_list)
 		{"p", print_pointer},
 		{"r", print_rev_string},
 		{"R", print_rot13},
+		{"l", print_lengths},
+		{"h", print_lengths},
 		{NULL, NULL}
 	};
 
